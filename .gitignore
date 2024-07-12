@@ -4,7 +4,12 @@
 /node_modules
 /.pnp
 .pnp.js
-src/assets/
+src/assets/audio
+src/assets/css
+src/assets/fonts
+src/assets/i18n
+src/assets/scss
+src/assets/video
 
 # testing
 /coverage
