@@ -1,0 +1,156 @@
+.notification-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-list li {
+  position: relative;
+  padding: 10px 0;
+}
+
+.icon-container {
+  position: absolute;
+  bottom: 5px;
+  right: 45px;
+  display: flex;
+  gap: 10px; 
+}
+.icon-container2 {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  display: flex;
+  gap: 10px; 
+}
+.mark-read-icon,
+.delete-icon {
+  cursor: pointer;
+  gap: 2px;
+}
+
+.task-div{
+  display: table;
+    background: #fff;
+    padding: 10px 0;
+    padding-right: 20px;
+    width: 100%;
+    border-bottom: 1px solid #f4f4f4;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 200ms ease;
+}
+
+.mark-read-icon i,
+.delete-icon i {
+  font-size: large;
+}
+.notification-list li:last-child {
+  border-bottom: none;
+}
+
+.notification-dropdown {
+  right: 0; 
+  position: absolute;
+  z-index: 1000;
+  min-width: 400px; 
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 576px) {
+  .notification-dropdown {
+    min-width: 350px; 
+    left: 50% !important; 
+    transform: translateX(-50%) !important;
+    width: 95% !important;
+    max-width: none;
+  }
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.notification-highlight {
+  background-color: rgba(107, 171, 245, 0.3); 
+  color: yellow;
+  transition: background-color 1s ease-out; 
+}
+
+.notification-icon{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 30px;
+  width: 100px;
+}
+
+.notification-list {
+  min-height: 100px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.notification-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notification-list li {
+  padding: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(234, 236, 239);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(226, 226, 227);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(249, 250, 252);
+}
+
+.notification-list li p {
+  margin: 0;
+}
+
+.notification-list {
+  max-height: 400px; 
+  overflow-y: auto;
+}
+
+.loader-spinner {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 50px; 
+}
+
+.notification-loader {
+  height:20px;
+  width: 20px;
+  padding: 3px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #020915;
+  --_m: 
+    conic-gradient(#0000 10%,#000),
+    linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+  -webkit-mask-composite: source-out;
+          mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {to{transform: rotate(1turn)}}

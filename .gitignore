@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 src/assets/audio
-src/assets/css
+# src/assets/css
 src/assets/fonts
 src/assets/i18n
 src/assets/scss
