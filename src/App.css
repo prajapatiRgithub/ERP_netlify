@@ -1,0 +1,420 @@
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #6c757d;
+}
+
+.password-toggle-icon i {
+  font-size: 1.25rem;
+}
+
+.form-control {
+  padding-right: 2.5rem;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper .invalid-feedback {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  font-size: 0.875rem;
+}
+
+#baseInput-err {
+  font-size: 12px;
+}
+.form-check-input {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .form-check-input {
+    margin-bottom: 10px;
+  }
+}
+
+header {
+  top: 70px !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  header {
+    top: 60px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-check-input {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card-body:has(table) {
+    overflow-x: scroll !important;
+  }
+}
+
+.card-body::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+.card-body::-webkit-scrollbar-thumb {
+  background-color: #888 !important;
+  border-radius: 4px !important;
+  border: 2px solid #555 !important;
+}
+
+form input {
+  font-size: 14px !important;
+}
+.react-select__control input {
+  border: none !important;
+}
+.search-form input {
+  border: none !important;
+}
+textarea {
+  font-size: 14px !important;
+}
+.table-responsive {
+  width: 100%;
+  overflow-x: hidden !important;
+}
+.form-control input {
+  font-size: 20px !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="file"] {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+input[type="file"]::file-selector-button {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ececec;
+  transition: 1s;
+}
+.sub-icon {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px !important;
+}
+.list-group-item a {
+  display: flex !important;
+  align-items: center;
+}
+.list-group-item a::after {
+  display: none;
+}
+.img {
+  width: 120px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.delete-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.login-card h6,
+h5 {
+  color: #000 !important;
+}
+.login-card input {
+  color: #000 !important;
+}
+.login-social-title::before {
+  background: #000 !important;
+}
+::placeholder {
+  color: #000 !important;
+  letter-spacing: 0 !important;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: #000 !important;
+}
+
+.react-select__placeholder {
+  color: black !important;
+}
+.react-select__control {
+  border-color: #f1f1f1 !important;
+}
+.react-select__input-container {
+  border-color: #f1f1f1 !important;
+  box-shadow: none !important;
+}
+.bg-img-cover {
+  height: 100%;
+  width: 100%;
+}
+
+.icon-disabled {
+  pointer-events: none !important;
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+}
+.card {
+  box-shadow: none !important;
+  border: 1px solid #f1f1f1 !important;
+}
+.card-body {
+  padding: 5px 10px !important;
+}
+body {
+  background: #fff !important;
+}
+select {
+  border-color: #f1f1f1;
+  padding: 0px 10px !important;
+}
+.page-body {
+  background: #fff !important;
+}
+.page-main-header {
+  border-bottom: 1px solid #f1f1f1 !important;
+}
+.css-13cymwt-control {
+  border-color: #f1f1f1 !important;
+}
+.css-1jqq78o-placeholder {
+  color: #000 !important;
+}
+.css-qbdosj-Input input {
+  border-color: transparent !important;
+}
+.css-166bipr-Input input {
+  border-color: transparent !important;
+}
+.flatpickr-input {
+  font-size: 14px !important;
+}
+.tooltip .tooltip-inner {
+  background-color: black !important;
+  color: lightgray !important;
+  border-radius: 4px !important;
+  padding: 4px 8px !important;
+}
+
+.tooltip .arrow::before {
+  border-bottom-color: black !important;
+  border-top-color: black !important;
+}
+
+.img-size {
+  width: 100px;
+  height: 100px;
+}
+
+.preview-image img {
+  display: block;
+}
+
+.preview-image .loading-indicator {
+  display: none;
+}
+
+.preview-image.loading .loading-indicator {
+  display: block;
+}
+
+.preview-image.loading img {
+  display: none;
+}
+
+svg {
+  cursor: pointer;
+}
+/* flatpickr class */
+.clickable {
+  font-size: 14px !important;
+}
+.nav-link {
+  cursor: pointer !important;
+}
+.nav-link.active {
+  color: #4d8aff !important;
+}
+.nav-link:has(.nav-submenu.active) {
+  color: #4d8aff !important;
+}
+.nav-submenu.active {
+  opacity: 1;
+}
+.RiDeleteBtn {
+  color: red;
+}
+.salaryslip {
+  overflow-x: auto !important;
+}
+.notFound {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  margin-top: 15%;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  overflow: visible;
+}
+
+.page-body-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.page-body-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.page-body-wrapper::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+  border: 2px solid #555;
+}
+
+.page-body-wrapper {
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.scroll-list::-webkit-scrollbar {
+  display: none !important;
+}
+
+.scroll-list::-webkit-scrollbar-thumb {
+  display: none !important;
+}
+
+.scroll-list {
+  scrollbar-width: none !important; /* Firefox */
+}
+
+.scroll-list {
+  -ms-overflow-style: none !important;
+}
+.custome-hr {
+  border: 0.5px solid #e7dfdf;
+}
+.text-muted {
+  color: #6c757d;
+}
+
+.text-muted:hover {
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 600px) {
+  .page-wrapper.compact-wrapper .page-body-wrapper .page-body {
+    margin-top: 15% !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .page-wrapper.compact-wrapper .page-body-wrapper .page-body {
+    margin-top: 20% !important;
+  }
+}
+.image-container {
+  position: relative;
+}
+
+.RiDeleteBtn {
+  cursor: pointer !important;
+}
+
+.img-dlt {
+  padding-bottom: 30px !important;
+}
+.fs {
+  font-size: 10px;
+}
+.preview-images {
+  position: relative;
+  overflow: hidden;
+  padding-top: 75%;
+}
+
+.preview-images img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image-containers {
+  position: relative;
+  overflow: hidden;
+  padding-top: 75%;
+}
+
+.image-containers img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.delete-buttons {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+/* for endorse modal to have scroll when there is more errors */
+.endorse-error-modal {
+  height: auto;
+  max-height: 400px;
+  overflow-y: scroll;
+}

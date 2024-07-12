@@ -1,0 +1,92 @@
+.attendance-summary {
+  padding: 5px;
+}
+.attendance-summary .card {
+  border: none;
+}
+.attendance-summary .card-header {
+  background-color: #fff;
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.attendance-summary .card-header .btn {
+  font-size: 1rem;
+}
+.attendance-summary .card-body {
+  background-color: #fff;
+}
+.attendance-summary .card-body .row {
+  text-align: center;
+}
+.attendance-summary .card-body .row div {
+  margin: 10px 0;
+}
+.attendance-summary .search-bar {
+  margin-top: 10px;
+}
+.datebtn {
+  font-size: 8px;
+  padding: 0.375rem 0.675rem;
+  border-radius: 0;
+  font-weight: 100;
+}
+.staff-list .status div,
+.staff-list .actions div {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+.staff-list div.active {
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.staff-list div.deactive {
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.input-group .form-control::placeholder {
+  color: #aaa;
+  font-weight: 300;
+}
+.input-group-text {
+  background-color: transparent;
+  border-right: 0;
+}
+.form-control {
+  border-left: 0;
+}
+.log-card {
+  background-color: #f8f9fa; /* Light grey background */
+  border: 1px solid #dee2e6; /* Light grey border */
+  border-radius: 0.25rem; /* Rounded corners */
+}
+
+.log-card-body {
+  padding: 1rem; /* Padding inside the card */
+}
+
+.log-card-text {
+  margin: 0; /* Remove default margin */
+}
+.grid-item {
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: calc(33.33% - 10px); /* Adjust the width to account for the margin */
+}
+.fs-size {
+  font-size: 1.5rem !important;
+}
+.hr-sidebar {
+  height: 100vh !important;
+}
+/* .bg-color{
+    background: linear-gradient(#e66465, #9198e5) !important;
+  } */

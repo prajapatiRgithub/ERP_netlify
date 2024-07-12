@@ -1,0 +1,23 @@
+export const staffEnums = {
+    NAME:'Name',
+    EMAIL:'Email',
+    CONTACT_NO: 'Contact Number',
+    QUALIFICATION: 'Qualification',
+    ROLE: 'Role',
+    POSITION:"Position",
+    EXPERIENCE:'Experience',
+    SALARY:'Salary',
+    JOINING_DATE: 'Joining Date',
+    LEFT_DATE: 'Left Date',
+    ADDRESS: 'Address',
+    STAFF_LIST: 'Staff List',
+    PERSONAL_DETAILS:'Personal Details',
+    STAFF: 'Staff',
+    OTHER_DETAILS:' Other Details',
+    LEFT_DATE_VALIDATION: "Left date must be greater than Joining date",
+    ROLE_OPTIONS : [
+        { label: "Staff", value: "Staff" },
+        { label: "Trainer", value: "Trainer" },
+      ],
+    ROLE_PAYLOAD : ["Staff","Trainer"],
+}
