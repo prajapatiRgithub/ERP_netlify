@@ -1,0 +1,278 @@
+/**=====================
+    02. Typography css start
+==========================**/
+//Custom css Start
+body {
+  font-size: $body-font-size;
+  overflow-x: hidden;
+  font-family: $font-sfpro;
+  color: $theme-body-font-color;
+  background-color: $body-bg-color;
+  scroll-behavior: smooth;
+}
+ul {
+  padding-left: $ul-padding-left;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+* a {
+  color: var(--theme-default);
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+a {
+  &:hover {
+    text-decoration: none;
+    color: var(--theme-default);
+  }
+}
+*.btn:focus {
+  box-shadow: $btn-focus-box-shadow !important;
+}
+p {
+  font-size: $paragraph-font-size;
+  line-height: $paragraph-line-height;
+  letter-spacing: $paragraph-letter-spacing;
+}
+span {
+  font-weight: 500;
+}
+code {
+  color: $code-tag-color !important;
+  background-color: $code-tag-bg-color;
+  padding: $code-tag-padding;
+  margin: $code-tag-margin;
+  border-radius: $code-tag-border-radious;
+}
+blockquote {
+  border-left: $blockquote-border;
+  padding: $blockquote-padding;
+  &.text-center {
+    border: none;
+    padding: $blockquote-padding;
+  }
+  &.text-end {
+    border-left: none;
+    border-right: $blockquote-border;
+    padding: $blockquote-padding;
+  }
+}
+:focus {
+  outline-color: $all-focus-outline-color;
+}
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+svg {
+  vertical-align: baseline;
+}
+input {
+  &:focus {
+    outline-color: $transparent-color;
+  }
+}
+label {
+  margin-bottom: 0.5rem;
+}
+//Typography css start
+.typography {
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
+    margin: 20px 0;
+    margin-top: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  small {
+    padding-left: $small-tag-padding;
+    color: $small-tag-color;
+  }
+}
+pre {
+  background-color: $pre-tag-bg-color;
+  padding: $pre-tag-padding;
+}
+//Typography css end
+.owl-theme {
+  .owl-dots {
+    .owl-dot {
+      span {
+        background: lighten($primary-color, 20%);
+      }
+      &.active,
+      &:hover {
+        span {
+          background: var(--theme-default);
+        }
+      }
+    }
+  }
+  .owl-nav {
+    &.disabled {
+      & + .owl-dots {
+        margin-bottom: -10px;
+        margin-top: 25px;
+      }
+    }
+  }
+}
+.note-editor {
+  &.note-frame {
+    border-color: $light-color;
+  }
+}
+.note-editor {
+  &.note-frame {
+    border-color: $light-color;
+  }
+}
+// modal page
+.modal {
+  .modal-body {
+    .card {
+      box-shadow: none !important;
+    }
+  }
+}
+.modal-dialog {
+  .modal-content {
+    .modal-body {
+      p {
+        a {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+// index page notify
+.alert-copy {
+  border: 1px solid var(--theme-default);
+  line-height: 1;
+  display: inline-block;
+  width: 300px;
+  color: $white;
+  background-color: var(--theme-default);
+  .close {
+    box-shadow: none;
+    color: $white;
+    line-height: 1.4;
+    font-weight: 100;
+  }
+}
+.ace-editor {
+  height: 400px;
+  width: 100%;
+}
+.CodeMirror {
+  top: 0 !important;
+}
+// rangeslider
+.irs-from,
+.irs-to,
+.irs-single {
+  background: var(--theme-default);
+  &:after {
+    border-top-color: var(--theme-default);
+  }
+}
+.irs-line-mid,
+.irs-line-left,
+.irs-line-right,
+.irs-bar,
+.irs-bar-edge {
+  background-color: var(--theme-default);
+}
+// sweetalert css
+.swal-button {
+  background-color: var(--theme-default);
+  &:active {
+    background-color: darken($primary-color, 5%);
+  }
+}
+.swal-button--cancel {
+  background-color: $light-semi-gray !important;
+}
+.clipboaard-container {
+  h6 {
+    line-height: 1.6;
+  }
+}
+fieldset {
+  .input-group-prepend {
+    & ~ .form-control {
+      height: 39px;
+    }
+  }
+  .input-group-lg {
+    .input-group-prepend,
+    .input-group-append {
+      .btn {
+        padding: 0.8rem 1.75rem;
+      }
+    }
+  }
+}
+.f1 .f1-steps .f1-step .f1-step-icon {
+  padding: 12px;
+}
+.form-inline .form-group {
+  display: flex;
+}
+.input-group-text {
+  i {
+    line-height: 1.5;
+  }
+}
+// genral //
+.media {
+  display: flex;
+  align-items: flex-start;
+  .media-body {
+    flex: 1;
+  }
+}
+.row {
+  > div {
+    position: relative;
+  }
+}
+[class*="col-"] {
+  position: relative;
+}
+hr {
+  opacity: 1;
+  background-color: $light-semi-gray;
+}
+.modal-header,
+.modal-footer,
+.modal-content {
+  border-color: $light-semi-gray;
+}
+.position-unset {
+  position: unset !important;
+}
+.rating-cionlist {
+  display: flex;
+  align-items: center;
+  li {
+    i {
+      color: $rating;
+    }
+  }
+}
+/**=====================
+    02. Typography css Ends
+==========================**/

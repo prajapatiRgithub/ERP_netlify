@@ -1,0 +1,232 @@
+/**=====================
+    63. Order History CSS start
+==========================**/
+.prooduct-details-box {
+  margin-bottom: 30px;
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 16px;
+    cursor: pointer;
+  }
+  .media {
+    border: 1px solid $light-gray;
+    width: 100%;
+    position: relative;
+    display: block;
+    .media-body {
+      padding: 15px;
+    }
+  }
+  .rating {
+    color: $product-rating;
+    i{
+      + i{
+        margin-left: 4px;
+      }
+    }
+  }
+  .price {
+    font-size: 14px;
+    font-weight: 600;
+    span {
+      margin-left: 5px;
+      color: $light-font;
+    }
+  }
+  ul.rating {
+    li {
+      display: inline-block;
+    }
+  }
+  .product-name {
+    h6 {
+      a{
+        color: $theme-body-font-color;
+        font-size: 15px;
+      }
+    }
+  }
+  .btn {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-size: 9px;
+    padding: 2px 5px;
+  }
+}
+.order-history {
+  .input-group {
+    text-align: right;
+    max-width: 300px;
+  }
+  table{
+    th {
+      min-width: 170px;
+    }
+    th,
+    td {
+      text-align: center;
+    }
+    thead {
+      tr {
+        th {
+          vertical-align: middle;
+          border-top: none;
+          background-color: rgba($primary-color, 0.05);
+          border: 1px solid var(--theme-default);
+          padding: 15px;
+          font-size: 16px;
+          color: var(--theme-default);
+          font-weight: 600;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          font-weight: $light-text;
+          vertical-align: middle;
+          .product-name {
+            a {
+              font-size: 16px;
+              color: $theme-body-font-color;
+            }
+          }
+        }
+      }
+    }
+    .qty-box {
+      width: 120px;
+      margin: 0 auto;
+      border-radius: 5px;
+      overflow: hidden;
+      input.input-number{
+        border: 1px solid $light-gray;
+      }
+      input {
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        &:focus {
+          box-shadow: none;
+          border: none;
+        }
+      }
+      .input-group {
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 1px solid $light-gray;
+        overflow: hidden;
+      }
+      .btn {
+        background-color: transparent;
+        padding: 5px 10px;
+      }
+    }
+  }
+  .rdt_Table{
+    .rdt_TableHead{
+      color: $primary-color;
+      font-weight: 600;
+      .rdt_TableHeadRow{
+        background-color: rgba(77, 138, 255, 0.1);
+      }
+      h6{
+        margin-bottom: 0;
+      }
+    }
+    .rdt_TableBody{
+      .rdt_TableRow{
+        &:hover{
+          .rdt_TableCell{
+            &:first-child{
+              background-color: $table-row-hover;
+            }
+          }
+        }
+        &:nth-child(odd){
+          .rdt_TableCell{
+            &:first-child{
+              background-color: $light-table-color;
+            }
+          }
+        }
+      }
+      .rdt_TableCell{
+        .product-name{
+          a{
+            font-size: 16px;
+            color: $theme-body-font-color;
+          }
+        }
+        .order-process{
+          font-size: 13px;
+          color: $light-text;
+          padding-left: 12px;
+          margin-top: 3px;
+          .order-process-circle {
+            position: relative;
+            &:before {
+              position: absolute;
+              content: "";
+              width: 4px;
+              height: 4px;
+              border-radius: 100%;
+              background-color: $dark-gray;
+              left: -12px;
+              top: 6px;
+            }
+            &.shipped-order {
+              &:before {
+                background-color: $success-color;
+              }
+            }
+            &.cancel-order {
+              &:before {
+                background-color: $danger-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.whishlist-main {
+  > div {
+    margin-bottom: -30px;
+  }
+}
+@media only screen and (max-width: 1470px) {
+  // table 
+  .rdt_Table{
+    .rdt_TableHead{
+      .rdt_TableHeadRow{
+        .rdt_TableCol{
+          min-width: 180px;
+        }
+      }
+    }
+    .rdt_TableBody{
+      .rdt_TableCell{
+        &:last-child{
+          min-width: 180px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .wishlist {
+    .text-end {
+      text-align: left !important;
+    }
+  }
+}
+/**=====================
+    63. Order History CSS end
+==========================**/

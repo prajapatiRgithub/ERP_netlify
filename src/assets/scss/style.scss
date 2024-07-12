@@ -1,0 +1,180 @@
+/*! -----------------------------------------------------------------------------------
+
+    Template Name: Wingo Admin
+    Template URI: http://admin.pixelstrap.com/wingo/theme
+    Description: This is Admin theme
+    Author: Pixelstrap
+    Author URI: https://themeforest.net/user/pixelstrap
+
+-----------------------------------------------------------------------------------
+01. Reset CSS
+02. Typography CSS
+03. According CSS
+04. Alert CSS
+05. Avatar CSS
+06. Badge CSS
+07. Bookmark CSS
+08. Breadcrumb CSS
+09. Button CSS
+10. Card css
+11. Color CSS
+12. Datatable  CSS
+13. Date-picker CSS
+14. Dropdown CSS
+15. Form-input CSS
+16. Forms CSS
+17. Icon CSS
+18. List CSS
+19. Loader CSS
+20. Popover CSS
+21. Print css
+22. Radio CSS
+23. React plugin CSS
+24. Ribbon CSS
+25. Steps CSS
+26. Switch CSS
+27. Tab CSS
+28. Table CSS
+29. Typeahead-search CSS
+30. Box-layout CSS
+31. Footer CSS
+32. Grid CSS
+33. Header CSS
+34. Nav CSS
+35. RTL CSS
+36. Search CSS
+37. Select 2 CSS
+38. Sidebar CSS
+39. Blog CSS
+40. Bookmark-app CSS
+41. Cart CSS
+42. Chart CSS
+43. Chat CSS
+44. Checkout CSS
+45. Comingsoon CSS
+46. Contact CSS
+47. Dashboard 1 CSS
+48. Dashboard 2 CSS
+49. Dashboard 3 CSS
+50. Ecommerce CSS
+51. Email application CSS
+52. Error page CSS
+53. FAQ CSS
+54. File manager CSS
+55. Gallery CSS
+56. Invoice CSS
+57. Job CSS
+58. Knaban CSS
+59. Knowlwdge CSS
+60. Learning CSS
+61. Login CSS
+62. Mega-option CSS
+63. Order-history CSS
+64. Page CSS
+65. Pricing CSS
+66. Progress CSS
+67. Project-list CSS
+68. Social app CSS
+69. Task CSS
+70. User profile CSS
+71. Wishlist CSS
+72. Theme layout CSS
+73. Responsive CSS
+74. Customizer CSS
+75. Update CSS
+76. Authentication CSS
+77. Scrollbar CSS
+ */
+// *** utils ***
+:root {
+  --theme-default: #4d8aff;
+  --theme-secondary: #fd2d63;
+}
+
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/theme-font";
+// *** base ***
+@import "base/reset";
+@import "base/typography";
+//  *** components ***
+@import "components/according.scss";
+@import "components/alert.scss";
+@import "components/avatars.scss";
+@import "components/badge.scss";
+@import "components/bookmark.scss";
+@import "components/breadcrumb.scss";
+@import "components/buttons.scss";
+@import "components/card.scss";
+// @import "components/color.scss";
+@import "components/datatable.scss";
+@import "components/datepicker";
+@import "components/dropdown.scss";
+@import "components/form-input.scss";
+@import "components/forms.scss";
+@import "components/icons.scss";
+@import "components/list.scss";
+@import "components/loader.scss";
+@import "components/popover.scss";
+@import "components/print.scss";
+@import "components/radio.scss";
+@import "components/ribbon.scss";
+@import "components/steps.scss";
+@import "components/typeahead-search.scss";
+@import "components/switch.scss";
+@import "components/tab.scss";
+@import "components/table.scss";
+@import "components/react-plugin";
+//	*** pages ***
+@import "pages/blog.scss";
+@import "pages/bookmark-app.scss";
+@import "pages/cart.scss";
+@import "pages/chart.scss";
+@import "pages/chat.scss";
+@import "pages/checkout.scss";
+@import "pages/comingsoon.scss";
+@import "pages/contacts.scss";
+@import "pages/dashboard_2.scss";
+@import "pages/dashboard_3.scss";
+@import "pages/dashboard_default.scss";
+@import "pages/ecommerce.scss";
+// @import "pages/email-application​.scss";
+@import "./pages/email-application";
+@import "pages/errorpage.scss";
+@import "pages/faq.scss";
+@import "pages/file.scss";
+@import "pages/gallery.scss";
+@import "pages/kanban.scss";
+@import "pages/job-search.scss";
+@import "pages/knowledgebase.scss";
+@import "pages/learning.scss";
+@import "pages/login.scss";
+@import "pages/megaoption.scss";
+@import "pages/order-history.scss";
+@import "pages/page.scss";
+@import "pages/pricing.scss";
+@import "pages/progress.scss";
+@import "pages/projectlist.scss";
+@import "pages/social-app.scss";
+@import "pages/task.scss";
+@import "pages/user-profile.scss";
+@import "pages/wishlist.scss";
+@import "pages/invoice.scss";
+/* ---------------------
+	*** themes ***
+-----------------------*/
+// @import "themes/responsive.scss";
+@import "themes/custom-theme-options.scss";
+@import "themes/theme-customizer.scss";
+@import "themes/update.scss";
+@import "themes/authLogin.scss";
+// *** layout ***
+@import "layout/footer.scss";
+@import "layout/grid.scss";
+@import "layout/header.scss";
+@import "layout/navs.scss";
+@import "layout/search.scss";
+@import "layout/select2.scss";
+@import "layout/sidebar.scss";
+@import "layout/rtl.scss";
+@import "layout/box-layout.scss";

@@ -1,0 +1,55 @@
+@import "~bootstrap-scss/bootstrap.scss";
+@import "vendors/chartist/chartist";
+
+@import "vendors/svg-icon/svg-icon";
+@import "vendors/font-awesome.scss";
+@import "vendors/flag-icon.scss";
+@import "vendors/icoicon/icons";
+@import "vendors/animate/animate";
+@import "vendors/sticky/sticky";
+@import "vendors/todo/todo";
+@import 'vendors/themify.scss';
+
+// Datepicker
+@import "~react-datepicker/dist/react-datepicker.css";
+
+//  calendar
+@import "~@fullcalendar/daygrid/main.css";
+@import "~react-big-calendar/lib/css/react-big-calendar.css";
+
+// Dropzone
+@import "~react-dropzone-uploader/dist/styles.css";
+
+// Image gallery
+@import "~react-image-lightbox/style.css";
+
+// ReactToastify
+@import "~react-toastify/dist/ReactToastify.css";
+
+// Typeahead
+@import "~react-bootstrap-typeahead/css/Typeahead.css";
+
+//  ImageCrop
+@import "~react-image-crop/dist/ReactCrop.css";
+
+// Drag&Drop
+@import "~react-dragula/dist/dragula.css";
+
+// Timeline
+@import "~react-vertical-timeline-component/style.min.css";
+
+// Mde EDitor
+@import "~easymde/dist/easymde.min.css";
+
+// ScrollBar
+@import 'react-perfect-scrollbar/dist/css/styles.css';
+
+//  ImageCrop
+@import "~react-image-crop/dist/ReactCrop.css";
+
+// Kanban Board
+@import '@asseinfo/react-kanban/dist/styles.css';
+
+@import "style.scss";
+
+@import "responsive.scss";
